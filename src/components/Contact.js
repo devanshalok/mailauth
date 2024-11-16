@@ -26,15 +26,28 @@ function Contact() {
           </button>
         </form>
       </div>
-      <div className="flex space-x-6 mt-6">
-        <a href="https://linkedin.com/in/devanshalok" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-highlight text-2xl">
-          <FaLinkedin />
+      <div className="flex space-x-4 mt-4">
+        <a
+          href="https://www.linkedin.com/in/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#865d36]"
+        >
+          <FaLinkedin size={30} />
         </a>
-        <a href="https://github.com/devanshalok" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-highlight text-2xl">
-          <FaGithub />
+        <a
+          href="https://github.com/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#865d36]"
+        >
+          <FaGithub size={30} />
         </a>
-        <a href="mailto:devanshalok@gmail.com" className="text-secondary hover:text-highlight text-2xl">
-          <FaEnvelope />
+        <a
+          href="mailto:youremail@example.com"
+          className="hover:text-[#865d36]"
+        >
+          <FaEnvelope size={30} />
         </a>
       </div>
     </div>

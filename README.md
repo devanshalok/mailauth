@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# MailAuth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**MailAuth** is a powerful tool for generating verified email addresses using a user’s first name, last name, and the company’s website address. The app assigns a confidence score to each generated email address, ensuring reliability. Users can store these email addresses in a database for future use, send emails directly to selected addresses, and search stored addresses by name or company.
 
-## Available Scripts
+Built with **React**, **Node.js**, and **MongoDB**, MailAuth provides a seamless experience for email verification, storage, and communication.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Email Address Generation**: Create verified email addresses using first name, last name, and company domain.
+- **Confidence Score**: Assigns a reliability score to each generated email address.
+- **Database Storage**: Save verified email addresses for future use.
+- **Email Sending**: Send emails directly to selected addresses from the app.
+- **Search Functionality**: Easily search saved email addresses by name or company.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js**: For building the frontend user interface.
+- **Node.js**: Backend for handling API requests and email verification.
+- **MongoDB**: Database for storing verified email addresses and related data.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these instructions to set up and run MailAuth locally.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure you have the following installed:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (v14+ recommended)
+- **MongoDB** (local instance or cloud-based)
+- A package manager like **npm** or **yarn**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the Repository**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/devanshalok/mailauth.git
+   cd mailauth
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install Dependencies**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Navigate to the `backend` and `frontend` directories to install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   # For backend
+   cd backend
+   npm install
 
-## Learn More
+   # For frontend
+   cd ../frontend
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Running the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Start MongoDB**: Ensure your MongoDB instance is running locally or provide a connection URI in the backend configuration.
 
-### Code Splitting
+2. **Start Backend**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Navigate to the `backend` folder and run:
 
-### Analyzing the Bundle Size
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   The backend server will run on `http://localhost:5000`.
 
-### Making a Progressive Web App
+3. **Start Frontend**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   Navigate to the `frontend` folder and run:
 
-### Advanced Configuration
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   The frontend application will be available at `http://localhost:3000`.
 
-### Deployment
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Generate Email Addresses**:
+   - Input the first name, last name, and company website domain.
+   - The app generates potential email addresses with confidence scores.
 
-### `npm run build` fails to minify
+2. **Store Email Addresses**:
+   - Save verified email addresses to the database for future use.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Send Emails**:
+   - Select one or more email addresses from the database.
+   - Compose and send emails directly through the app.
+
+4. **Search Stored Emails**:
+   - Use the search bar to find email addresses by name or company.
+
+## Future Enhancements
+
+- **AI-Enhanced Verification**: Use machine learning to improve confidence score accuracy.
+- **Email Campaign Management**: Add bulk email sending and campaign tracking features.
+- **Analytics Dashboard**: Provide insights into email sending success rates and user engagement.
+- **Authentication**: Secure access with user accounts and roles.
+
+## Built With
+
+- **React.js** - Frontend framework
+- **Node.js & Express** - Backend server
+- **MongoDB** - Database for storing email data
+
+## Contributing
+
+Contributions are welcome! Please see `CONTRIBUTING.md` for guidelines on how to get involved with the project.
+
+## Authors
+
+- **Devansh Alok** - Initial work - [devanshalok](https://github.com/devanshalok)
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.
+
+## Acknowledgments
+
+- Thanks to the open-source community for tools and libraries supporting email verification and management.
+- Inspired by the need for a seamless, efficient email management solution for professionals.
